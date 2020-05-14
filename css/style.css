@@ -3,6 +3,9 @@ html {
 }
 
 body {
+    font-family: all-round-gothic, sans-serif;
+    font-style: normal;
+    font-weight: 200;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
