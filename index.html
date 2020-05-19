@@ -9,16 +9,81 @@
     <!-- husk unik title til alle sider -->
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/smf5qns.css">
+    <!-- taget fra adobe fonts -->
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <a href="#">Vin</a>
+                <a href="#">Vinmagere</a>
+                <a href="#">Tilbud</a>
+                <a href="#">Om os</a>
+
+                <a href="#">
+                    <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+                </a>
+                <a href="#"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
     </header>
 
-    <main></main>
+    <main>
 
-    <footer></footer>
+        <div id="grad1">
+            <video autoplay loop muted controls class="intro-video" id="intro">
+                <source src="#" type="video/mp4">
+            </video>
+
+            <div class="flex-container">
+                <div><a href="#"><img src="images/rodvine-forside.jpg" alt="rødvin" id="vin-billeder-forside"></a>
+                </div>
+                <div><a href="#"><img src="images/hvidvine-forside.jpg" alt="hvidvin" id="vin-billeder-forside"></a></div>
+                <div><a href="#"><img src="images/rosevine-forside.jpg" alt="rosevin" id="vin-billeder-forside"></a></div>
+            </div>
+
+            <div class="flex-container-text">
+                <h1>Vinmagere</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="#"><button type="button" id="button-forside">Mød vores vinmagere</button></a>
+            </div>
+            <img src="images/billed-soeren.jpg" alt="billed af Søren" id="img-soeren">
+            <div class="flex-container-soeren">
+
+                <p><i>"Vi har selv skabt kontakten med vinmagerne, det er der vi skiller os ud"</i><br><br>- Søren Ferløv, ejer af flexvine</p>
+            </div>
+            <div class="flex-container-text">
+                <h1>Smagkasser</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="#"><button type="button" id="button-forside">Prøv vores smagkasser</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <flex-container-footer>
+            <div>
+                <p><b>Kontakt os</b></p>
+                <p>Søren Ferløv</p>
+                <p>Email: kontakt@flexvine.dk</p>
+                <p>Tlf:+45 20 99 13 57</p>
+                <p>CVR: 37545457</p>
+            </div>
+            <di>
+                <p><b>Betal med:</b></p>
+            </di>
+        </flex-container-footer>
+    </footer>
     <script src="mitscript.js"></script>
 </body>
 
