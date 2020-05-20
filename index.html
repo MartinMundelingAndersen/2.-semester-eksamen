@@ -24,11 +24,17 @@
             <input type="checkbox" id="toggle" class="hidden">
 
             <div id="main-nav">
-                <a href="#">Vin</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="#">Rødvin</a>
+                        <a href="#">Hvidvin</a>
+                        <a href="#">Rosévin</a>
+                    </div>
+                </div>
                 <a href="#">Vinmagere</a>
                 <a href="#">Tilbud</a>
                 <a href="#">Om os</a>
-
                 <a href="#">
                     <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
                 </a>
@@ -51,38 +57,53 @@
                 <div><a href="#"><img src="images/rosevine-forside.jpg" alt="rosevin" id="vin-billeder-forside"></a></div>
             </div>
 
-            <div class="flex-container-text">
-                <h1>Vinmagere</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <a href="#"><button type="button" id="button-forside">Mød vores vinmagere</button></a>
+
+            <div class="flex-container-text1">
+                <div>
+                    <h2>Vinmagere</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <a href="#"><button type="button" id="button-forside">Mød vores vinmagere</button></a>
+                </div>
+                <img src="images/vinmagere-forside.jpg" alt="Vinmagere" id="img-vinmagere-forside">
             </div>
+
             <img src="images/billed-soeren.jpg" alt="billed af Søren" id="img-soeren">
             <div class="flex-container-soeren">
-
                 <p><i>"Vi har selv skabt kontakten med vinmagerne, det er der vi skiller os ud"</i><br><br>- Søren Ferløv, ejer af flexvine</p>
             </div>
-            <div class="flex-container-text">
-                <h1>Smagkasser</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <a href="#"><button type="button" id="button-forside">Prøv vores smagkasser</button></a>
+
+            <div class="flex-container-text2">
+                <img src="images/smagkasser-forside.jpg" alt="smagkasser" id="img-smagkasser-forside">
+                <div>
+                    <h2>Smagkasser</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <a href="#"><button type="button" id="button-forside">Prøv vores smagkasser</button></a>
+                </div>
             </div>
         </div>
     </main>
-
+    <hr>
     <footer>
-        <hr>
-        <flex-container-footer>
-            <div>
-                <p><b>Kontakt os</b></p>
-                <p>Søren Ferløv</p>
-                <p>Email: kontakt@flexvine.dk</p>
-                <p>Tlf:+45 20 99 13 57</p>
-                <p>CVR: 37545457</p>
-            </div>
-            <di>
-                <p><b>Betal med:</b></p>
-            </di>
-        </flex-container-footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" id="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" id="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" id="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" id="footer-icon"></a>
+        </div>
+        <br>
     </footer>
     <script src="mitscript.js"></script>
 </body>

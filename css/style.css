@@ -38,6 +38,7 @@ img {
 #icon2 {
     height: 15px;
     width: 15px;
+    margin-right: 5px;
 }
 
 header {
@@ -60,7 +61,6 @@ header {
     width: 150px;
 }
 
-
 #main-nav {
     display: flex;
     margin-right: .5em;
@@ -79,6 +79,50 @@ header {
     color: grey;
 }
 
+.dropbtn {
+    margin: 0 .5em;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #90ca6c;
+}
+
 a {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
@@ -95,6 +139,7 @@ h2 {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 0 50px;
 }
 
 p {
@@ -142,12 +187,21 @@ p {
     opacity: 0.5;
 }
 
-.flex-container-text {
+.flex-container-text1,
+.flex-container-text2 {
     background: white;
     margin: 50px;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
+}
+
+#img-vinmagere-forside {
+    display: none;
+}
+
+#img-smagkasser-forside {
+    display: none;
 }
 
 .flex-container-soeren {
@@ -186,15 +240,21 @@ p {
     font-style: normal;
 }
 
-.flex-container-footer {
+footer {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-icon {
+    width: 50px;
 }
 
 /*MEDIA QUERY MOBILE */
 
-@media all and (max-width: 779px) {
+@media all and (max-width: 910px) {
 
     /*HEADER NAV*/
     header {
@@ -230,9 +290,11 @@ p {
     }
 }
 
+
 /*MEDIA QUERY TABLET AND ABOVE*/
 
-@media all and (min-width: 780px) {
+@media all and (min-width: 911px) {
+
 
     /*HEADER NAV*/
     nav {
@@ -268,11 +330,32 @@ p {
         margin-top: 54px;
     }
 
+    #img-soeren {
+        margin-top: -30px;
+        margin-left: 270px;
+    }
+
+    .flex-container-soeren {
+        margin-left: 300px;
+        margin-right: 100px;
+        padding-left: 100px;
+        border-radius: 100px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around
+    }
+
 }
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
 
 @media all and (min-width: 1024px) {
+
+    #grad1 {
+        height: 2400px;
+    }
 
     /*NAVIGATION*/
     nav {
@@ -286,6 +369,48 @@ p {
 
     .flex-container {
         flex-direction: row;
+    }
+
+    .flex-container-text1 {
+        display: flex;
+        text-align: left;
+    }
+
+    .flex-container-text2 {
+        display: flex;
+        text-align: left;
+    }
+
+    #img-vinmagere-forside {
+        display: block;
+        max-width: 520px;
+        max-height: 360px;
+        min-height: 360px;
+        border-radius: 30px;
+    }
+
+    #img-soeren {
+        margin-top: -30px;
+        margin-left: 280px;
+    }
+
+    #img-smagkasser-forside {
+        display: block;
+        max-width: 520px;
+        max-height: 360px;
+        min-height: 360px;
+        border-radius: 30px;
+    }
+
+    .flex-container-soeren {
+        margin-left: 300px;
+        margin-right: 400px;
+        padding-left: 100px;
+        border-radius: 100px;
+    }
+
+    #button-forside {
+        margin-left: 50px;
     }
 
 }
