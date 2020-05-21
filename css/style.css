@@ -1,7 +1,37 @@
 html {}
 
-#grad1 {
+#grad-forside {
     height: 3000px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #68764e, #ffffff);
+}
+
+#grad-rodvin {
+    height: 6000px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #902212, #ffffff);
+}
+
+#grad-hvidvin {
+    height: 4000px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #9db472, #ffffff);
+}
+
+#grad-rosevin {
+    height: 1000px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #ce6859, #ffffff);
+}
+
+#grad-smagekasser {
+    height: 3500px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #68764e, #ffffff);
+}
+
+#grad-mad-til-vin {
+    height: 2800px;
     background-color: white;
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
 }
@@ -133,6 +163,9 @@ h1 {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 64px;
+    color: white;
+    text-align: center;
 }
 
 h2 {
@@ -164,14 +197,14 @@ p {
 }
 
 /*flex-container*/
-.flex-container {
+.flex-container-vin-forside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.flex-container > div {
+.flex-container-vin-forside > div {
     width: 300px;
     margin: 10px;
     text-align: center;
@@ -240,6 +273,68 @@ p {
     font-style: normal;
 }
 
+.flex-container-vin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-container-vine {
+    background: white;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#img-vine {
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 700px;
+}
+
+#button-vine {
+    background-color: #68764e;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex-container-mad {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-container-retter {
+    margin: 50px;
+    padding: 5px;
+}
+
+#img-mad {
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 700px;
+}
+
+#img-mad:hover {
+    opacity: 0.5;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -295,6 +390,21 @@ footer {
 
 @media all and (min-width: 911px) {
 
+    #grad-rodvin {
+        height: 3500px;
+    }
+
+    #grad-hvidvin {
+        height: 2200px;
+    }
+
+    #grad-smagekasser {
+        height: 1700px;
+    }
+
+    #grad-mad-til-vin {
+        height: 1500px;
+    }
 
     /*HEADER NAV*/
     nav {
@@ -342,6 +452,12 @@ footer {
         border-radius: 100px;
     }
 
+    .flex-container-vin,
+    .flex-container-mad {
+        flex-direction: row;
+        justify-content: center;
+    }
+
     footer {
         flex-direction: row;
         justify-content: space-around
@@ -353,7 +469,7 @@ footer {
 
 @media all and (min-width: 1024px) {
 
-    #grad1 {
+    #grad-forside {
         height: 2400px;
     }
 
@@ -367,7 +483,7 @@ footer {
         margin-top: 55px;
     }
 
-    .flex-container {
+    .flex-container-vin-forside {
         flex-direction: row;
     }
 
@@ -411,6 +527,11 @@ footer {
 
     #button-forside {
         margin-left: 50px;
+    }
+
+    #img-vine {
+        max-width: 300px;
+        max-height: 700px;
     }
 
 }
