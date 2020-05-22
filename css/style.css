@@ -1,7 +1,7 @@
 html {}
 
 #grad-forside {
-    height: 3000px;
+    height: 3400px;
     background-color: white;
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
 }
