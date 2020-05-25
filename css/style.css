@@ -217,7 +217,7 @@ p2 {
     margin-top: 64px;
 }
 
-/*flex-container*/
+
 .flex-container-vin-forside {
     display: flex;
     justify-content: center;
@@ -296,18 +296,15 @@ p2 {
 
 .flex-container-vin {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .flex-container-vin > div {
     width: 300px;
     margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .flex-container-vine {
@@ -323,17 +320,14 @@ p2 {
 
 .flex-container-vin-information,
 .flex-container-vin-information2 {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     background: white;
-    margin: 50px;
+    margin: 20px;
     border-radius: 20px;
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    max-height: 400px;
-    max-width: 500px;
 }
 
 #img-vine {
@@ -404,7 +398,7 @@ p2 {
     background-color: white;
     border-radius: 20px;
     color: black;
-    padding: 15px 32px;
+    padding: -15px -32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -420,12 +414,6 @@ p2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 footer {
@@ -619,7 +607,7 @@ footer {
 
     .item6 {
         grid-column: 1 / span 2;
-        grid-row: 6;
+        grid-row: 5;
     }
 
     footer {
