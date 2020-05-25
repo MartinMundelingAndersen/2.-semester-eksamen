@@ -36,6 +36,12 @@ html {}
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
 }
 
+#grad-rodvin-information {
+    height: 2200px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #902212, #ffffff);
+}
+
 body {
     font-family: sans-serif;
     font-style: normal;
@@ -101,8 +107,8 @@ header {
     color: black;
     text-decoration: none;
     display: block;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 3em;
 }
 
 #main-nav a:hover {
@@ -113,8 +119,8 @@ header {
     margin: 0 .5em;
     border: none;
     cursor: pointer;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 3em;
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -178,6 +184,15 @@ h2 {
 p {
     padding: 0 50px;
     margin-bottom: 10px;
+}
+
+#h2-2,
+p2 {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1px;
+    color: white;
 }
 
 /*active class sættes på det link i menuen man befinder sig på, så farven ændres på menuen på den aktuelle side - den er ikke sat på noget endnu*/
@@ -291,6 +306,18 @@ p {
     font-style: normal;
 }
 
+.flex-container-vin-information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    margin: 50px;
+    border-radius: 20px;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #img-vine {
     border-radius: 20px;
     max-width: 300px;
@@ -335,6 +362,33 @@ p {
     opacity: 0.5;
 }
 
+#antal {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex-container-button {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -349,7 +403,7 @@ footer {
 
 /*MEDIA QUERY MOBILE */
 
-@media all and (max-width: 910px) {
+@media all and (max-width: 799px) {
 
     /*HEADER NAV*/
     header {
@@ -383,155 +437,162 @@ footer {
         text-align: center;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
-}
 
-
-/*MEDIA QUERY TABLET AND ABOVE*/
-
-@media all and (min-width: 911px) {
-
-    #grad-rodvin {
-        height: 3500px;
-    }
-
-    #grad-hvidvin {
-        height: 2200px;
-    }
-
-    #grad-smagekasser {
-        height: 1700px;
-    }
-
-    #grad-mad-til-vin {
-        height: 1500px;
-    }
-
-    /*HEADER NAV*/
-    nav {
+    .dropdown {
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-
-    #main-nav {
-        justify-content: space-evenly;
-        min-width: 50%;
-        /*sikrer at menupunkterne ikke presses sammen*/
-        margin: 0;
-    }
-
-    #main-nav a {
-        margin: 0 .5em;
-    }
-
-    /*Dette fjerner burgermenu ikonet*/
-    label {
-        display: none;
-    }
-
-    /*Dette skubber menuen ud til højre ved at bruge al margin til højre for logoet*/
-    #logo-burger {
-        margin-right: auto;
-    }
-
-    /* intro video*/
-    .intro-video {
-        margin-top: 54px;
-    }
-
-    #img-soeren {
-        margin-top: -30px;
-        margin-left: 270px;
-    }
-
-    .flex-container-soeren {
-        margin-left: 300px;
-        margin-right: 100px;
-        padding-left: 100px;
-        border-radius: 100px;
-    }
-
-    .flex-container-vin,
-    .flex-container-mad {
-        flex-direction: row;
         justify-content: center;
     }
 
-    footer {
-        flex-direction: row;
-        justify-content: space-around
+    .dropdown-content {
+        margin-top: 35px;
     }
 
-}
+    /*MEDIA QUERY TABLET AND ABOVE*/
 
-/*MEDIA QUERY LAPTOP AND ABOVE*/
+    @media all and (min-width: 800px) {
 
-@media all and (min-width: 1024px) {
+        #grad-rodvin {
+            height: 3500px;
+        }
 
-    #grad-forside {
-        height: 2400px;
+        #grad-hvidvin {
+            height: 2200px;
+        }
+
+        #grad-smagekasser {
+            height: 1700px;
+        }
+
+        #grad-mad-til-vin {
+            height: 1500px;
+        }
+
+        /*HEADER NAV*/
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        #main-nav {
+            justify-content: space-evenly;
+            min-width: 50%;
+            /*sikrer at menupunkterne ikke presses sammen*/
+            margin: 0;
+        }
+
+        #main-nav a {
+            margin: 0 .5em;
+        }
+
+        /*Dette fjerner burgermenu ikonet*/
+        label {
+            display: none;
+        }
+
+        /*Dette skubber menuen ud til højre ved at bruge al margin til højre for logoet*/
+        #logo-burger {
+            margin-right: auto;
+        }
+
+        /* intro video*/
+        .intro-video {
+            margin-top: 54px;
+        }
+
+        #img-soeren {
+            margin-top: -30px;
+            margin-left: 270px;
+        }
+
+        .flex-container-soeren {
+            margin-left: 300px;
+            margin-right: 100px;
+            padding-left: 100px;
+            border-radius: 100px;
+        }
+
+        .flex-container-vin,
+        .flex-container-mad {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: space-around
+        }
+
     }
 
-    /*NAVIGATION*/
-    nav {
-        flex-direction: row;
-    }
+    /*MEDIA QUERY LAPTOP AND ABOVE*/
 
-    /* intro video*/
-    .intro-video {
-        margin-top: 55px;
-    }
+    @media all and (min-width: 1024px) {
 
-    .flex-container-vin-forside {
-        flex-direction: row;
-    }
+        #grad-forside {
+            height: 2400px;
+        }
 
-    .flex-container-text1 {
-        display: flex;
-        text-align: left;
-    }
+        /*NAVIGATION*/
+        nav {
+            flex-direction: row;
+        }
 
-    .flex-container-text2 {
-        display: flex;
-        text-align: left;
-    }
+        /* intro video*/
+        .intro-video {
+            margin-top: 55px;
+        }
 
-    #img-vinmagere-forside {
-        display: block;
-        max-width: 520px;
-        max-height: 360px;
-        min-height: 360px;
-        border-radius: 30px;
-    }
+        .flex-container-vin-forside {
+            flex-direction: row;
+        }
 
-    #img-soeren {
-        margin-top: -30px;
-        margin-left: 280px;
-    }
+        .flex-container-text1 {
+            display: flex;
+            text-align: left;
+        }
 
-    #img-smagkasser-forside {
-        display: block;
-        max-width: 520px;
-        max-height: 360px;
-        min-height: 360px;
-        border-radius: 30px;
-    }
+        .flex-container-text2 {
+            display: flex;
+            text-align: left;
+        }
 
-    .flex-container-soeren {
-        margin-left: 300px;
-        margin-right: 400px;
-        padding-left: 100px;
-        border-radius: 100px;
-    }
+        #img-vinmagere-forside {
+            display: block;
+            max-width: 520px;
+            max-height: 360px;
+            min-height: 360px;
+            border-radius: 30px;
+        }
 
-    #button-forside {
-        margin-left: 50px;
-    }
+        #img-soeren {
+            margin-top: -30px;
+            margin-left: 280px;
+        }
 
-    #img-vine {
-        max-width: 300px;
-        max-height: 700px;
-    }
+        #img-smagkasser-forside {
+            display: block;
+            max-width: 520px;
+            max-height: 360px;
+            min-height: 360px;
+            border-radius: 30px;
+        }
 
-}
+        .flex-container-soeren {
+            margin-left: 300px;
+            margin-right: 400px;
+            padding-left: 100px;
+            border-radius: 100px;
+        }
+
+        #button-forside {
+            margin-left: 50px;
+        }
+
+        #img-vine {
+            max-width: 300px;
+            max-height: 700px;
+        }
+
+    }
