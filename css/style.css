@@ -48,14 +48,15 @@ img {
 
 /*basket-icon*/
 #icon {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
 }
 
 /*seach-icon*/
 #icon2 {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 25px;
     margin-right: 5px;
 }
 
