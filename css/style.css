@@ -587,6 +587,16 @@ footer {
         justify-content: space-around
     }
 
+    .flex-container-om {}
+
+    #billede-om {
+        width: 85%;
+    }
+
+    #vin-plante {
+        width: 85%;
+    }
+
 }
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
@@ -658,4 +668,31 @@ footer {
         max-height: 700px;
     }
 
+    .flex-container-om {
+        display: flex;
+        text-align: left;
+
+    }
+
+    #billede-om {
+        width: 45%;
+    }
+
+    #vin-plante {
+        width: 45%;
+    }
+
+    .flex-container-vin-information {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    #img-vine-information {
+        margin-left: 150%;
+    }
+
+    .flex-container-vin-information2 {
+        width: 60%;
+        margin-left: 20%;
+    }
 }
