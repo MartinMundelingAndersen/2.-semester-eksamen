@@ -1,51 +1,27 @@
 html {}
 
-#grad-forside {
-    height: 3400px;
+#grad {
+    height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
 }
 
 #grad-rodvin {
-    height: 6000px;
+    height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #902212, #ffffff);
 }
 
 #grad-hvidvin {
-    height: 4000px;
+    height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #9db472, #ffffff);
 }
 
 #grad-rosevin {
-    height: 1000px;
+    height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #ce6859, #ffffff);
-}
-
-#grad-smagekasser {
-    height: 3500px;
-    background-color: white;
-    background-image: linear-gradient(to bottom, #68764e, #ffffff);
-}
-
-#grad-mad-til-vin {
-    height: 2800px;
-    background-color: white;
-    background-image: linear-gradient(to bottom, #68764e, #ffffff);
-}
-
-#grad-rodvin-information {
-    height: 2200px;
-    background-color: white;
-    background-image: linear-gradient(to bottom, #902212, #ffffff);
-}
-
-#grad-hvidvin-information {
-    height: 2200px;
-    background-color: white;
-    background-image: linear-gradient(to bottom, #9db472, #ffffff);
 }
 
 body {
@@ -201,6 +177,10 @@ p2 {
     color: white;
 }
 
+ul {
+    margin-left: 50px;
+}
+
 /*active class sættes på det link i menuen man befinder sig på, så farven ændres på menuen på den aktuelle side - den er ikke sat på noget endnu*/
 .active {
     color: lightgrey;
@@ -279,7 +259,23 @@ p2 {
 }
 
 #button-forside {
-    background-color: #a19d9b;
+    background-color: #68764e;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#button {
+    background-color: #68764e;
     border-radius: 20px;
     color: white;
     padding: 15px 32px;
@@ -323,6 +319,7 @@ p2 {
     display: flex;
     flex-wrap: wrap;
     background: white;
+    text-align: left;
     margin: 20px;
     border-radius: 20px;
     font-family: all-round-gothic, sans-serif;
@@ -340,22 +337,6 @@ p2 {
     max-width: 300px;
     max-height: 700px;
     border-radius: 20%;
-}
-
-#button-vine {
-    background-color: #68764e;
-    border-radius: 20px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #ned,
@@ -485,21 +466,6 @@ footer {
 
 @media all and (min-width: 800px) {
 
-    #grad-rodvin {
-        height: 3500px;
-    }
-
-    #grad-hvidvin {
-        height: 2200px;
-    }
-
-    #grad-smagekasser {
-        height: 1700px;
-    }
-
-    #grad-mad-til-vin {
-        height: 1500px;
-    }
 
     /*HEADER NAV*/
     nav {
@@ -554,19 +520,16 @@ footer {
 
     .flex-container-vin-information {
         max-height: 500px;
-        max-width: 500px;
     }
 
     .flex-container-vin-information2 {
         max-height: 1000px;
-        max-width: 1000px;
     }
 
     #img-vine-information {
         max-width: 400px;
         max-height: 800px;
         border-radius: 20%;
-        margin-top: 70px;
     }
 
     .grid-container {
@@ -587,7 +550,7 @@ footer {
 
     .item2 {
         grid-column: 1;
-        grid-row: 1 / span 5;
+        grid-row: 2 / span 3;
     }
 
     .item3 {
