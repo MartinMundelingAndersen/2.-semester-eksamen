@@ -231,6 +231,14 @@ ul {
     text-align: center;
 }
 
+.flex-container-om {
+    background: white;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
 #img-vinmagere-forside {
     display: none;
 }
