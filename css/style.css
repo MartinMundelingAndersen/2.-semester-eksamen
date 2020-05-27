@@ -432,6 +432,20 @@ ul {
     justify-content: center;
 }
 
+.flex-container-kvittering {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    margin-bottom: 10%;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -615,7 +629,6 @@ footer {
         justify-content: space-around
     }
 
-    .flex-container-om {}
 
     #billede-om {
         width: 85%;
@@ -726,15 +739,4 @@ footer {
         margin-left: 20%;
     }
 
-    .flex-container-kvittering {
-        background: white;
-        margin-left: 30%;
-        margin-right: 30%;
-
-        margin-bottom: 10%;
-        padding: 5px;
-        border-radius: 20px;
-        text-align: center;
-
-    }
 }

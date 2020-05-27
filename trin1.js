@@ -8,7 +8,6 @@ const knap = document.getElementById("knap");
 knap.addEventListener("click", function () {
     sessionStorage.setItem("navn", brugernavn.value);
     sessionStorage.setItem("adresse", brugeradr.value);
-    sessionStorage.setItem("pogb", postnrogby.value);
-
+    sessionStorage.setItem("postnrogby", postnrogby.value);
     location.href = "trin2.html";
 })
