@@ -760,7 +760,6 @@ footer {
     #kassen {
         width: 25%;
     }
-
 }
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
@@ -783,6 +782,7 @@ footer {
 
     .flex-container-vin-forside {
         flex-direction: row;
+        margin-top: 60px;
     }
 
     .flex-container-text1 {
@@ -879,3 +879,4 @@ footer {
         width: 15%;
         margin-top: 2px;
     }
+}
