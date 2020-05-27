@@ -1,6 +1,7 @@
 html {}
 
-#grad {
+#grad,
+#grad-tilbud {
     height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
@@ -31,6 +32,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#tilbudsbadge {
+    position: absolute;
+    top: -20px;
+    right: -23px;
+}
+
+
 
 /*Box-sizing skal gælde for alle elementer, hvorfor den sættes på * og ikke bare body */
 * {
@@ -181,6 +190,14 @@ p2 {
     font-style: normal;
     margin: 1px;
     color: white;
+}
+
+p3 {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1px;
+    text-decoration: line-through;
 }
 
 label {
@@ -361,6 +378,7 @@ ul {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
+    position: relative;
 }
 
 .flex-container-vin-information,
