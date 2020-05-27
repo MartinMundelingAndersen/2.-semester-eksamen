@@ -494,8 +494,11 @@ footer {
 
 .flex-container-koeb {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background: white;
-    margin: 50px;
+    margin: 20px;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
@@ -503,14 +506,10 @@ footer {
 }
 
 #vinkoeb1 {
-    min-height: 110px;
-    min-width: 110px
+    width: 100px;
+    margin-left: 100px
 }
 
-.vinvalg {
-    margin-left: -40%;
-    margin-right: 20%;
-}
 
 .flex-container-kurv {
     background: white;
@@ -539,11 +538,6 @@ footer {
     text-align: right;
 }
 
-.flex-container-antal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 #antalvine {
     background-color: white;
@@ -554,13 +548,13 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
     cursor: pointer;
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 40px;
     height: 40px;
+
 }
 
 
