@@ -1,7 +1,6 @@
 html {}
 
-#grad,
-#grad-tilbud {
+#grad {
     height: 100%;
     background-color: white;
     background-image: linear-gradient(to bottom, #68764e, #ffffff);
@@ -259,6 +258,8 @@ ul {
     padding: 5px;
     border-radius: 20px;
     text-align: center;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+
 }
 
 .flex-container-om {
@@ -266,7 +267,7 @@ ul {
     margin: 50px;
     padding: 5px;
     border-radius: 20px;
-    text-align: center;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 #billede-om {
@@ -296,6 +297,7 @@ ul {
     border-radius: 20px;
     text-align: left;
     z-index: 0;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 #img-soeren {
@@ -379,6 +381,7 @@ ul {
     font-weight: 400;
     font-style: normal;
     position: relative;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 .flex-container-vin-information,
@@ -392,6 +395,7 @@ ul {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 #img-vine {
@@ -469,15 +473,14 @@ ul {
     display: flex;
     flex-wrap: wrap;
     background: white;
-
     margin-left: 30%;
     margin-right: 30%;
-
     margin-bottom: 10%;
     padding: 20px 60px 20px 60px;
     border-radius: 20px;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 footer {
@@ -517,6 +520,7 @@ footer {
     margin: 50px;
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
 .din-kurv-tekst {
@@ -834,8 +838,6 @@ footer {
 
     .flex-container-om {
         display: flex;
-        text-align: left;
-
     }
 
     #billede-om {
@@ -849,12 +851,7 @@ footer {
     }
 
     .flex-container-vin-information {
-        width: 40%;
-        margin-left: 30%;
-    }
-
-    #img-vine-information {
-        margin-left: 150%;
+        margin: auto 0;
     }
 
     .flex-container-vin-information2 {
@@ -866,6 +863,7 @@ footer {
         width: 50%;
         margin: 0 auto;
         margin-top: 5px;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
     }
 
     .flex-container-kurv {
