@@ -167,6 +167,11 @@ h2 {
 p {
     padding: 0 50px;
     margin-bottom: 10px;
+    font-family: acumin-pro, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
 }
 
 #h2-2,
@@ -176,6 +181,14 @@ p2 {
     font-style: normal;
     margin: 1px;
     color: white;
+}
+
+label {
+    font-family: acumin-pro, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
 }
 
 ul {
@@ -309,11 +322,12 @@ ul {
     font-style: normal;
 }
 
-#knap {
+#knap,
+#knap1 {
     background-color: #68764e;
     border-radius: 20px;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -436,11 +450,12 @@ ul {
     display: flex;
     flex-wrap: wrap;
     background: white;
+
     margin-left: 30%;
     margin-right: 30%;
 
     margin-bottom: 10%;
-    padding: 5px;
+    padding: 20px 60px 20px 60px;
     border-radius: 20px;
     text-align: center;
     justify-content: center
@@ -459,8 +474,79 @@ footer {
 }
 
 
+.flex-container-koeb {
+    display: flex;
+    background: white;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
 
-/*MEDIA QUERY MOBILE */
+}
+
+#vinkoeb1 {
+    min-height: 110px;
+    min-width: 110px
+}
+
+.vinvalg {
+    margin-left: -40%;
+    margin-right: 20%;
+}
+
+.flex-container-kurv {
+    background: white;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.din-kurv-tekst {
+    text-align: left;
+    margin-left: 10px;
+    font-family: acumin-pro, sans-serif;
+
+    font-weight: 200;
+
+    font-style: normal;
+}
+
+#prisograbat1 {
+    text-align: right;
+    margin-top: -80px;
+
+}
+
+#prisograbat2 {
+    text-align: right;
+}
+
+.flex-container-antal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#antalvine {
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    padding: -15px -32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*MEDIA QUERY  MOBILE */
 
 @media all and (max-width: 799px) {
 
