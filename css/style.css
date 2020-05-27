@@ -464,7 +464,8 @@ ul {
     justify-content: center;
 }
 
-.flex-container-kvittering {
+.flex-container-kvittering,
+.flex-container-kontakt {
     display: flex;
     flex-wrap: wrap;
     background: white;
@@ -505,7 +506,7 @@ footer {
 
 }
 
-#vinkoeb1 {
+.vinkoeb1 {
     width: 100px;
     margin-left: 100px
 }
@@ -555,7 +556,27 @@ footer {
     width: 40px;
     height: 40px;
 
+
 }
+
+#kassen {
+    background-color: #68764e;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
 
 
 /*MEDIA QUERY  MOBILE */
@@ -736,6 +757,10 @@ footer {
         width: 85%;
     }
 
+    #kassen {
+        width: 25%;
+    }
+
 }
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
@@ -837,4 +862,20 @@ footer {
         margin-left: 20%;
     }
 
-}
+    .flex-container-koeb {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .flex-container-kurv {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+
+    #kassen {
+        width: 15%;
+        margin-top: 2px;
+    }
