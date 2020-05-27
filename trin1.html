@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="rodvine.html">Rødvin</a>
+                        <a href="hvidvine.html">Hvidvin</a>
+                        <a href="rosevin.html">Rosévin</a>
+                        <a href="smagkasser.html">Smagekasser</a>
+                        <a href="mad.html">Mad til vin</a>
+                    </div>
+                </div>
+                <a href="vinmagere.html">Vinmagere</a>
+                <a href="tilbud.html">Tilbud</a>
+                <a href="om-os.html">Om os</a>
+                <a href="#">
+                    <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+                </a>
+                <a href="din-kurv.html"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <div id="grad">
+            <br>
+            <br>
+
+            <div class="flex-container-kvittering">
+
+                <h2>Trin 1 af 3: Faktureringsoplysninger</h2>
+                <form>
+                    <label for="navn">Dit navn</label><input type="text" id="navn"> <br><br>
+                    <label for="adresse">Din adresse </label><input type="text" id="adresse"> <br><br>
+                    <label for="pogb">Postnr og By </label><input type="text" id="pogb"> <br><br>
+                    <button type="button" id="knap">Næste</button>
+
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" id="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" id="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" id="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" id="footer-icon"></a>
+            <a href="https://www.instagram.com/flexvine/?hl=da"><img src="icon/instagram-icon.png" alt="Instagram" id="footer-icon"></a>
+        </div>
+        <br>
+    </footer>
+    <script src="trin1.js"></script>
+</body></html>

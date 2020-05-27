@@ -239,6 +239,16 @@ ul {
     text-align: center;
 }
 
+#billede-om {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+#vin-plante {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
 #img-vinmagere-forside {
     display: none;
 }
@@ -284,6 +294,22 @@ ul {
 }
 
 #button {
+    background-color: #68764e;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#knap {
     background-color: #68764e;
     border-radius: 20px;
     color: white;
@@ -417,6 +443,8 @@ footer {
 #footer-icon {
     width: 50px;
 }
+
+
 
 /*MEDIA QUERY MOBILE */
 
@@ -676,10 +704,12 @@ footer {
 
     #billede-om {
         width: 45%;
+        border-radius: 0 20px 20px 0;
     }
 
     #vin-plante {
         width: 45%;
+        border-radius: 0 20px 20px 0;
     }
 
     .flex-container-vin-information {
@@ -694,5 +724,17 @@ footer {
     .flex-container-vin-information2 {
         width: 60%;
         margin-left: 20%;
+    }
+
+    .flex-container-kvittering {
+        background: white;
+        margin-left: 30%;
+        margin-right: 30%;
+
+        margin-bottom: 10%;
+        padding: 5px;
+        border-radius: 20px;
+        text-align: center;
+
     }
 }
