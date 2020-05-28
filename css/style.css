@@ -763,10 +763,11 @@ footer {
     .flex-container-anbefaling {
         display: flex;
         justify-content: space-around;
+        margin: 0px;
     }
 
     #img-vine-anbefaling {
-        width: 200px;
+        max-width: 200px;
         border-radius: 20%;
     }
 
