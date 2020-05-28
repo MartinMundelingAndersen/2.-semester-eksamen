@@ -202,7 +202,7 @@ li {
     }
 
     #h1kort {
-        font-size: 50px;
+        font-size: 60px;
         font-family: all-round-gothic, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -213,8 +213,8 @@ li {
     .p-vimagere {
         display: block;
         color: white;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 90px;
+        margin-right: 90px;
         margin-bottom: 50px;
         text-align: center;
         font-family: acumin-pro, sans-serif;
@@ -239,7 +239,7 @@ li {
         width: 580px;
         background-color: white;
         left: 35%;
-        top: 73%;
+        top: 55%;
         margin-left: -125px;
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -160,26 +160,58 @@ h1 {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 64px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
+    font-size: 60px;
 }
 
 h2 {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 2px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 0 50px;
+    font-size: 20px;
 }
 
 p {
     padding: 0 50px;
     margin-bottom: 10px;
     font-family: acumin-pro, sans-serif;
-
     font-weight: 300;
-
     font-style: normal;
+}
+
+#under-p-vores-vine {
+    display: block;
+    color: white;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.vores-vine-hr {
+    color: white;
+    margin-top: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
 }
 
 #h2-2,
