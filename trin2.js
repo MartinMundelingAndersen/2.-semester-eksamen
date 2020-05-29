@@ -1,5 +1,6 @@
 "use strict";
 
+// Gør det muligt for brugeren at vælge lerverings type og føre det videre via sessionstorage til kviteringen
 const leveringsmuligheder = document.getElementsByName("levering");
 const knap = document.getElementById("knap");
 const knap1 = document.getElementById("knap1");

@@ -30,10 +30,10 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 4 seconds
+    setTimeout(showSlides, 4000); // skifter billed hver 4 sek.
 }
 
-// Tilføher værdi når man
+// Tilføher +1 eller -1 værdi til det antal vine man ønsker at købe
 const antal = document.getElementById("antal");
 document.getElementById("op").addEventListener("click", function () {
     antal.value = parseInt(antal.value) + 1;

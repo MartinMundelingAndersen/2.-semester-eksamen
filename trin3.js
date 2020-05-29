@@ -1,4 +1,6 @@
 "use strict";
+
+// Gør det muligt for brugeren at vælge betalings metode og føre det videre via sessionstorage til kviteringen
 const betalingsmuligheder = document.getElementsByName("betaling");
 const knap = document.getElementById("knap");
 const knap1 = document.getElementById("knap1");
