@@ -218,7 +218,7 @@ li {
         margin-bottom: 50px;
         text-align: center;
         font-family: acumin-pro, sans-serif;
-        font-weight: 250;
+        font-weight: 300;
         font-style: normal;
         font-size: 20px;
     }
@@ -235,12 +235,13 @@ li {
     }
 
     #popUp {
-        position: absolute;
+        position: fixed;
         width: 580px;
         background-color: white;
-        left: 35%;
-        top: 55%;
-        margin-left: -125px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }

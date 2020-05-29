@@ -33,7 +33,7 @@ body {
     padding: 0;
 }
 
-#tilbudsbadge {
+.tilbudsbadge {
     position: absolute;
     top: -20px;
     right: -23px;
@@ -67,6 +67,10 @@ img {
     height: 20px;
     width: 25px;
     margin-right: 5px;
+}
+
+.search-box {
+    line-height: 3em;
 }
 
 header {
@@ -213,7 +217,7 @@ p {
     margin-right: 90px;
     text-align: center;
     font-family: acumin-pro, sans-serif;
-    font-weight: 250;
+    font-weight: 300;
     font-style: normal;
     font-size: 20px;
 }
@@ -226,28 +230,9 @@ p {
     margin-bottom: 20px;
 }
 
-#h2-2,
-p2 {
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 1px;
-    color: white;
-}
-
-p3 {
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 1px;
-    text-decoration: line-through;
-}
-
 label {
     font-family: acumin-pro, sans-serif;
-
     font-weight: 300;
-
     font-style: normal;
 }
 
@@ -270,7 +255,7 @@ ul {
 }
 
 /* Slideshow billeder */
-#slideshow-img {
+.slideshow-img {
     border-radius: 5%;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
@@ -344,11 +329,11 @@ ul {
     font-size: 30px;
 }
 
-#vin-billeder-forside {
+.vin-billeder-forside {
     border-radius: 20px;
 }
 
-#vin-billeder-forside:hover {
+.vin-billeder-forside:hover {
     opacity: 0.5;
 }
 
@@ -391,7 +376,7 @@ ul {
     margin-left: 5px;
 }
 
-#button-forside {
+.button-forside {
     background-color: #68764e;
     border-radius: 20px;
     color: white;
@@ -437,7 +422,7 @@ ul {
 
 
 /* knapper */
-#button {
+.button {
     background-color: #68764e;
     border-radius: 20px;
     color: white;
@@ -511,7 +496,7 @@ ul {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
-#img-vine {
+.img-vine {
     border-radius: 20px;
     max-width: 300px;
     max-height: 700px;
@@ -552,13 +537,13 @@ ul {
     padding: 5px;
 }
 
-#img-mad {
+.img-mad {
     border-radius: 20px;
     max-width: 300px;
     max-height: 700px;
 }
 
-#img-mad:hover {
+.img-mad:hover {
     opacity: 0.5;
 }
 
@@ -566,7 +551,6 @@ ul {
     background-color: white;
     border-radius: 20px;
     color: black;
-    padding: -15px -32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -675,15 +659,14 @@ footer {
     margin-right: auto;
 }
 
-#footer-icon {
+.footer-icon {
     width: 50px;
 }
 
-#antalvine {
+.antalvine {
     background-color: white;
     border-radius: 12px;
     color: black;
-    padding: -15px -32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -748,6 +731,11 @@ footer {
         margin-top: 35px;
     }
 
+    .search-box {
+        display: flex;
+        justify-content: center;
+    }
+
     /* grid-box */
     .grid-item {
         text-align: center;
@@ -766,8 +754,8 @@ footer {
         margin: 0px;
     }
 
-    #img-vine-anbefaling {
-        max-width: 200px;
+    .img-vine-anbefaling {
+        width: 200px;
         border-radius: 20%;
     }
 
@@ -914,7 +902,7 @@ footer {
 
     }
 
-    #img-vine-anbefaling {
+    .img-vine-anbefaling {
         width: 300px;
         border-radius: 20%;
     }
@@ -988,7 +976,7 @@ footer {
             border-radius: 100px;
         }
 
-        #button-forside {
+        .button-forside {
             margin-left: 50px;
         }
 
@@ -1088,7 +1076,7 @@ footer {
         }
 
         .fisk-item7 {
-            grid-column: 2;
+            grid-column: 2 / span 2;
             grid-row: 5;
         }
 
